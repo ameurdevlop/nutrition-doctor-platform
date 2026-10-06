@@ -133,3 +133,12 @@ utiliser les services Cloud Azure.
 💡 Solution proposée
 
 L'application est organisée autour de plusieurs modules :
+👥 Acteurs du système
+
+La plateforme distingue principalement quatre rôles :
+
+Acteur	Responsabilités
+👨‍⚕️ Nutritionniste	Patients, consultations, suivi, analyses, prédictions
+👩‍💼 Secrétaire	Rendez-vous, patients, organisation du cabinet
+🧑 Patient	Rendez-vous, mesures, objectifs, consultations
+👨‍💻 Administrateur	Utilisateurs, sécurité, abonnements, administration
