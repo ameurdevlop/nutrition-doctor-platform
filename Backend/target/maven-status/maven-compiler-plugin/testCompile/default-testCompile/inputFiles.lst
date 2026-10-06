@@ -1,0 +1,17 @@
+C:\Users\LENOVO\IdeaProjects\Backend\src\test\java\com\hellcap\nutritiondoctor\ArchitectureTests.java
+C:\Users\LENOVO\IdeaProjects\Backend\src\test\java\com\hellcap\nutritiondoctor\domain\service\RateLimitServiceTest.java
+C:\Users\LENOVO\IdeaProjects\Backend\src\test\java\com\hellcap\nutritiondoctor\infrastructure\config\security\RateLimitingIntegrationTest.java
+C:\Users\LENOVO\IdeaProjects\Backend\src\test\java\com\hellcap\nutritiondoctor\infrastructure\controller\AuthenticationControllerTest.java
+C:\Users\LENOVO\IdeaProjects\Backend\src\test\java\com\hellcap\nutritiondoctor\infrastructure\controller\BookingControllerTest.java
+C:\Users\LENOVO\IdeaProjects\Backend\src\test\java\com\hellcap\nutritiondoctor\infrastructure\controller\CategoryControllerTest.java
+C:\Users\LENOVO\IdeaProjects\Backend\src\test\java\com\hellcap\nutritiondoctor\infrastructure\controller\FileManagerControllerTest.java
+C:\Users\LENOVO\IdeaProjects\Backend\src\test\java\com\hellcap\nutritiondoctor\infrastructure\controller\InBodyImportControllerTest.java
+C:\Users\LENOVO\IdeaProjects\Backend\src\test\java\com\hellcap\nutritiondoctor\infrastructure\controller\InBodyPdfControllerTest.java
+C:\Users\LENOVO\IdeaProjects\Backend\src\test\java\com\hellcap\nutritiondoctor\infrastructure\controller\NutritionistControllerTest.java
+C:\Users\LENOVO\IdeaProjects\Backend\src\test\java\com\hellcap\nutritiondoctor\infrastructure\controller\ObjectiveControllerTest.java
+C:\Users\LENOVO\IdeaProjects\Backend\src\test\java\com\hellcap\nutritiondoctor\infrastructure\controller\PatientObjectiveControllerTest.java
+C:\Users\LENOVO\IdeaProjects\Backend\src\test\java\com\hellcap\nutritiondoctor\infrastructure\controller\PatientsControllerTest.java
+C:\Users\LENOVO\IdeaProjects\Backend\src\test\java\com\hellcap\nutritiondoctor\infrastructure\controller\SecretaryControllerTest.java
+C:\Users\LENOVO\IdeaProjects\Backend\src\test\java\com\hellcap\nutritiondoctor\infrastructure\controller\WorkingHoursControllerTest.java
+C:\Users\LENOVO\IdeaProjects\Backend\src\test\java\com\hellcap\nutritiondoctor\infrastructure\entity\UserEntityBirthdayTest.java
+C:\Users\LENOVO\IdeaProjects\Backend\src\test\java\com\hellcap\nutritiondoctor\NutritionDoctorApplicationTests.java

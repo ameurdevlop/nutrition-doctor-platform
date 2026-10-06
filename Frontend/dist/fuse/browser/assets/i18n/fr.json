@@ -1,0 +1,124 @@
+{
+    "common": {
+        "uploadFile": "Importer un fichier",
+        "noItems": "Aucun élément",
+        "search": "Rechercher",
+        "add": "Ajouter",
+        "email": "Email",
+        "phone": "Téléphone",
+        "required": "Champ requis",
+        "submit": "Envoyer",
+        "returnTo": "Retour à",
+        "signIn": "Se connecter",
+        "signOut": "Se déconnecter",
+        "goTo": "Aller à"
+    },
+
+    "patients": {
+        "title": "Patients",
+        "noPatients": "Aucun patient",
+        "searchPlaceholder": "Rechercher un patient",
+        "addPatient": "Ajouter un patient",
+        "notFound": "Aucun patient trouvé"
+    },
+
+    "auth": {
+        "welcome": "Bienvenue",
+        "nutritionist": "nutritionniste",
+
+        "signIn": {
+            "title": "Connexion",
+            "username": "Nom d'utilisateur",
+            "usernameRequired": "Nom d'utilisateur requis",
+            "usernameInvalid": "Veuillez saisir une adresse e-mail valide ou votre numéro de téléphone",
+            "password": "Mot de passe",
+            "passwordRequired": "Mot de passe requis",
+            "rememberMe": "Se souvenir de moi",
+            "forgotPassword": "Mot de passe oublié ?",
+            "button": "Se connecter"
+        },
+
+        "signUp": {
+            "title": "Créer un compte",
+            "alreadyAccount": "Vous avez déjà un compte ?",
+            "fullName": "Nom complet",
+            "fullNameRequired": "Le nom complet est requis",
+            "email": "Adresse e-mail",
+            "emailRequired": "L'adresse e-mail est requise",
+            "emailInvalid": "Veuillez saisir une adresse e-mail valide",
+            "password": "Mot de passe",
+            "passwordRequired": "Le mot de passe est requis",
+            "company": "Entreprise",
+            "agree": "J'accepte les",
+            "terms": "Conditions d'utilisation",
+            "privacy": "Politique de confidentialité",
+            "button": "Créer votre compte gratuitement"
+        },
+
+        "forgotPassword": {
+            "title": "Mot de passe oublié ?",
+            "subtitle": "Choisissez votre méthode de récupération du mot de passe",
+            "phoneOption": "Utiliser votre numéro de téléphone",
+            "emailOption": "Utiliser votre e-mail",
+            "fillForm": "Remplissez le formulaire pour réinitialiser votre mot de passe",
+            "phoneNumber": "Numéro de téléphone",
+            "phoneRequired": "Le numéro de téléphone est requis",
+            "phoneInvalid": "Veuillez saisir un numéro de téléphone valide",
+            "origin": "Origine",
+            "sendCode": "Envoyer le code"
+        },
+
+        "resetPassword": {
+            "title": "Réinitialiser votre mot de passe",
+            "subtitle": "Créez un nouveau mot de passe pour votre compte",
+            "password": "Mot de passe",
+            "confirmPassword": "Confirmer le mot de passe",
+            "confirmRequired": "La confirmation du mot de passe est requise",
+            "mustMatch": "Les mots de passe doivent correspondre",
+            "button": "Réinitialiser votre mot de passe"
+        },
+
+        "signOut": {
+            "title": "Vous êtes déconnecté !",
+            "redirecting": "Redirection dans {{countdown}} seconde(s)",
+            "redirectNow": "Vous allez être redirigé !"
+        },
+
+        "unlock": {
+            "title": "Déverrouiller votre session",
+            "subtitle": "Votre session est verrouillée en raison de l'inactivité",
+            "name": "Nom complet",
+            "password": "Mot de passe",
+            "button": "Déverrouiller votre session",
+            "notYou": "Je ne suis pas"
+        }
+    },
+
+    "landing": {
+        "title": "Module d’accueil",
+        "description1": "Ceci peut être la page d’accueil ou de bienvenue de votre application.",
+        "description2": "Ce module est indépendant et possède sa propre configuration de routage.",
+        "launch": "Lancer l’application"
+    },
+
+    "dashboard": {
+        "welcomeTitle1": "Bienvenue,",
+        "welcomeTitle2": "nutritionniste !",
+        "description": "Nous sommes ravis de vous accueillir. Gérez vos patients, suivez leurs progrès et accédez à des outils pour une planification nutritionnelle efficace.",
+        "motivation": "Travaillons ensemble pour inspirer des vies plus saines !",
+        "community": "Plus de 17k personnes nous ont rejoints, c'est votre tour"
+    },
+    "nutritionalMeasurements": {
+        "title": "Mesures Nutritionnelles",
+        "selectPatient": "Sélectionnez un patient",
+        "allPatients": "Tous les patients",
+        "filterByPatient": "Filtrer par patient",
+        "searchPatient": "Rechercher un patient",
+        "currentAppointment": "Rendez-vous en cours",
+        "updateDatabase": "Upload File",
+        "uploadCsv": "Télécharger CSV",
+        "patientsWithAppointments": "Patients avec rendez-vous",
+        "noPatients": "Aucun patient avec rendez-vous en cours ou futur",
+        "noSearchResults": "Aucun patient trouvé pour cette recherche"
+    }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+
+    <!-- Disable verbose Spring Boot logs -->
+    <logger name="org.springframework.boot.autoconfigure.condition.ConditionEvaluationReportLoggingListener" level="WARN"/>
+    <logger name="org.springframework.boot.context.logging.ClasspathLoggingApplicationListener" level="WARN"/>
+    <logger name="org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter" level="ERROR"/>
+    <logger name="org.springframework.boot.autoconfigure" level="INFO"/>
+    <logger name="org.springframework.boot.context" level="INFO"/>
+
+    <!-- Root logger -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+</configuration>

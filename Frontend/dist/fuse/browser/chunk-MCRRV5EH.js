@@ -1,0 +1,1 @@
+var i="/api",t={production:!1,apiBaseUrl:i,nutritionistApi:`${i}/nutritionists`,inbodyApi:`${i}/inbody`,patientApi:`${i}/patients`,secretaryApi:`${i}/secretaries`,patientObjectiveApi:`${i}/patient-objective`,objectiveApi:`${i}/objectives`,categoryApi:`${i}/categories`,supportApi:`${i}/support`};export{t as a};

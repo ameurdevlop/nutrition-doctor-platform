@@ -1,0 +1,954 @@
+
+> fuse-angular@19.0.0 build
+> ng build --configuration production
+
+- Building...
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/@fuse/components/fullscreen/fullscreen.component.ts:14:13:
+      14 Ôöé     imports: [MatButtonModule, MatTooltipModule, NgTemplateOutlet,...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/@fuse/components/fullscreen/fullscreen.component.ts:16:13:
+      16 Ôöé export class FuseFullscreenComponent implements OnInit
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/@fuse/components/loading-bar/loading-bar.component.ts:14:13:
+      14 Ôöé     imports: [NgIf, MatProgressBarModule]
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/@fuse/components/loading-bar/loading-bar.component.ts:16:13:
+      16 Ôöé export class FuseLoadingBarComponent implements OnChanges, OnInit,...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/@fuse/components/navigation/horizontal/components/basic/basic.component.ts:17:13:
+      17 Ôöé     imports: [NgClass, NgIf, RouterLink, RouterLinkActive, MatTool...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/@fuse/components/navigation/horizontal/components/basic/basic.component.ts:19:13:
+      19 Ôöé export class FuseHorizontalNavigationBasicItemComponent implements...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/@fuse/components/navigation/horizontal/components/branch/branch.component.ts:18:13:
+      18 Ôöé     imports: [NgIf, NgClass, MatMenuModule, NgTemplateOutlet, NgFo...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/@fuse/components/navigation/horizontal/components/branch/branch.component.ts:20:13:
+      20 Ôöé export class FuseHorizontalNavigationBranchItemComponent implement...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/@fuse/components/navigation/horizontal/components/divider/divider.component.ts:12:13:
+      12 Ôöé     imports: [NgClass]
+         ÔòÁ              ~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/@fuse/components/navigation/horizontal/components/divider/divider.component.ts:14:13:
+      14 Ôöé export class FuseHorizontalNavigationDividerItemComponent implemen...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/@fuse/components/navigation/horizontal/components/spacer/spacer.component.ts:12:13:
+      12 Ôöé     imports: [NgClass]
+         ÔòÁ              ~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/@fuse/components/navigation/horizontal/components/spacer/spacer.component.ts:14:13:
+      14 Ôöé export class FuseHorizontalNavigationSpacerItemComponent implement...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/@fuse/components/navigation/horizontal/horizontal.component.ts:20:13:
+      20 Ôöé     imports: [NgFor, NgIf, FuseHorizontalNavigationBasicItemCompon...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/@fuse/components/navigation/horizontal/horizontal.component.ts:22:13:
+      22 Ôöé export class FuseHorizontalNavigationComponent implements OnChange...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/@fuse/components/navigation/vertical/components/aside/aside.component.ts:21:13:
+      21 Ôöé     imports: [NgClass, MatTooltipModule, NgIf, MatIconModule, NgFo...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/@fuse/components/navigation/vertical/components/aside/aside.component.ts:23:13:
+      23 Ôöé export class FuseVerticalNavigationAsideItemComponent implements O...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/@fuse/components/navigation/vertical/components/basic/basic.component.ts:16:13:
+      16 Ôöé     imports: [NgClass, NgIf, RouterLink, RouterLinkActive, MatTool...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/@fuse/components/navigation/vertical/components/basic/basic.component.ts:18:13:
+      18 Ôöé export class FuseVerticalNavigationBasicItemComponent implements O...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/@fuse/components/navigation/vertical/components/collapsable/collapsable.component.ts:22:13:
+      22 Ôöé     imports: [NgClass, MatTooltipModule, NgIf, MatIconModule, NgFo...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/@fuse/components/navigation/vertical/components/collapsable/collapsable.component.ts:24:13:
+      24 Ôöé export class FuseVerticalNavigationCollapsableItemComponent implem...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/@fuse/components/navigation/vertical/components/divider/divider.component.ts:12:13:
+      12 Ôöé     imports: [NgClass]
+         ÔòÁ              ~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/@fuse/components/navigation/vertical/components/divider/divider.component.ts:14:13:
+      14 Ôöé export class FuseVerticalNavigationDividerItemComponent implements...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/@fuse/components/navigation/vertical/components/group/group.component.ts:18:13:
+      18 Ôöé     imports: [NgClass, NgIf, MatIconModule, NgFor, FuseVerticalNav...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/@fuse/components/navigation/vertical/components/group/group.component.ts:20:13:
+      20 Ôöé export class FuseVerticalNavigationGroupItemComponent implements O...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/@fuse/components/navigation/vertical/components/spacer/spacer.component.ts:12:13:
+      12 Ôöé     imports: [NgClass]
+         ÔòÁ              ~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/@fuse/components/navigation/vertical/components/spacer/spacer.component.ts:14:13:
+      14 Ôöé export class FuseVerticalNavigationSpacerItemComponent implements ...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/@fuse/components/navigation/vertical/vertical.component.ts:28:13:
+      28 Ôöé     imports: [FuseScrollbarDirective, NgFor, NgIf, FuseVerticalNav...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/@fuse/components/navigation/vertical/vertical.component.ts:30:13:
+      30 Ôöé export class FuseVerticalNavigationComponent implements OnChanges,...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/@fuse/services/confirmation/dialog/dialog.component.ts:40:13:
+      40 Ôöé     imports: [NgIf, MatButtonModule, MatDialogModule, MatIconModul...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/@fuse/services/confirmation/dialog/dialog.component.ts:42:13:
+      42 Ôöé export class FuseConfirmationDialogComponent implements OnInit
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/app.component.ts:8:13:
+      8 Ôöé     imports: [RouterOutlet]
+        ÔòÁ              ~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/app.component.ts:10:13:
+      10 Ôöé export class AppComponent
+         ÔòÁ              ~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/dialogs/cancel-booking-dialog.component.ts:81:13:
+      81 Ôöé     imports: [
+         ÔòÁ              ^
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/dialogs/cancel-booking-dialog.component.ts:108:13:
+      108 Ôöé export class CancelBookingDialogComponent {
+          ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/layout/common/languages/languages.component.ts:22:13:
+      22 Ôöé     imports: [MatButtonModule, MatMenuModule, NgTemplateOutlet, Ng...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/layout/common/languages/languages.component.ts:24:13:
+      24 Ôöé export class LanguagesComponent implements OnInit, OnDestroy
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/layout/common/messages/messages.component.ts:19:13:
+      19 Ôöé     imports: [MatButtonModule, NgIf, MatIconModule, MatTooltipModu...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/layout/common/messages/messages.component.ts:21:13:
+      21 Ôöé export class MessagesComponent implements OnInit, OnDestroy
+         ÔòÁ              ~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/layout/common/notifications/notifications.component.ts:19:13:
+      19 Ôöé     imports: [MatButtonModule, NgIf, MatIconModule, MatTooltipModu...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/layout/common/notifications/notifications.component.ts:21:13:
+      21 Ôöé export class NotificationsComponent implements OnInit, OnDestroy
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/layout/common/quick-chat/quick-chat.component.ts:20:13:
+      20 Ôöé     imports: [NgClass, NgIf, MatIconModule, MatButtonModule, FuseS...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/layout/common/quick-chat/quick-chat.component.ts:22:13:
+      22 Ôöé export class QuickChatComponent implements OnInit, AfterViewInit, ...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/layout/common/search/search.component.ts:22:13:
+      22 Ôöé     imports: [NgIf, MatButtonModule, MatIconModule, FormsModule, M...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/layout/common/search/search.component.ts:33:13:
+      33 Ôöé export class SearchComponent implements OnChanges, OnInit, OnDestroy
+         ÔòÁ              ~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/layout/common/settings/settings.component.ts:33:13:
+      33 Ôöé     imports: [MatIconModule, FuseDrawerComponent, MatButtonModule,...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/layout/common/settings/settings.component.ts:35:13:
+      35 Ôöé export class SettingsComponent implements OnInit, OnDestroy
+         ÔòÁ              ~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/layout/common/shortcuts/shortcuts.component.ts:23:13:
+      23 Ôöé     imports: [MatButtonModule, MatIconModule, NgIf, MatTooltipModu...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/layout/common/shortcuts/shortcuts.component.ts:25:13:
+      25 Ôöé export class ShortcutsComponent implements OnInit, OnDestroy
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/layout/common/user/user.component.ts:29:13:
+      29 Ôöé     imports: [MatButtonModule, MatMenuModule, NgIf, MatIconModule,...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/layout/common/user/user.component.ts:31:13:
+      31 Ôöé export class UserComponent implements OnInit, OnDestroy
+         ÔòÁ              ~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/layout/layout.component.ts:30:13:
+      30 Ôöé     imports: [NgIf, EmptyLayoutComponent, CenteredLayoutComponent,...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/layout/layout.component.ts:32:13:
+      32 Ôöé export class LayoutComponent implements OnInit, OnDestroy
+         ÔòÁ              ~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/layout/layouts/empty/empty.component.ts:11:13:
+      11 Ôöé     imports: [FuseLoadingBarComponent, NgIf, RouterOutlet]
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/layout/layouts/empty/empty.component.ts:13:13:
+      13 Ôöé export class EmptyLayoutComponent implements OnDestroy
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/layout/layouts/horizontal/centered/centered.component.ts:24:13:
+      24 Ôöé     imports: [FuseLoadingBarComponent, NgIf, FuseVerticalNavigatio...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/layout/layouts/horizontal/centered/centered.component.ts:26:13:
+      26 Ôöé export class CenteredLayoutComponent implements OnInit, OnDestroy
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/layout/layouts/horizontal/enterprise/enterprise.component.ts:25:13:
+      25 Ôöé     imports: [FuseLoadingBarComponent, NgIf, FuseVerticalNavigatio...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/layout/layouts/horizontal/enterprise/enterprise.component.ts:27:13:
+      27 Ôöé export class EnterpriseLayoutComponent implements OnInit, OnDestroy
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/layout/layouts/horizontal/material/material.component.ts:24:13:
+      24 Ôöé     imports: [FuseLoadingBarComponent, NgIf, FuseVerticalNavigatio...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/layout/layouts/horizontal/material/material.component.ts:26:13:
+      26 Ôöé export class MaterialLayoutComponent implements OnInit, OnDestroy
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/layout/layouts/horizontal/modern/modern.component.ts:25:13:
+      25 Ôöé     imports: [FuseLoadingBarComponent, NgIf, FuseVerticalNavigatio...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/layout/layouts/horizontal/modern/modern.component.ts:27:13:
+      27 Ôöé export class ModernLayoutComponent implements OnInit, OnDestroy
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/layout/layouts/vertical/classic/classic.component.ts:25:13:
+      25 Ôöé     imports: [FuseLoadingBarComponent, FuseVerticalNavigationCompo...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/layout/layouts/vertical/classic/classic.component.ts:27:13:
+      27 Ôöé export class ClassicLayoutComponent implements OnInit, OnDestroy
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/layout/layouts/vertical/classy/classy.component.ts:29:13:
+      29 Ôöé     imports: [FuseLoadingBarComponent, FuseVerticalNavigationCompo...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/layout/layouts/vertical/classy/classy.component.ts:31:13:
+      31 Ôöé export class ClassyLayoutComponent implements OnInit, OnDestroy
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/layout/layouts/vertical/compact/compact.component.ts:23:13:
+      23 Ôöé     imports: [
+         ÔòÁ              ^
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/layout/layouts/vertical/compact/compact.component.ts:35:13:
+      35 Ôöé export class CompactLayoutComponent implements OnInit, OnDestroy {
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/layout/layouts/vertical/dense/dense.component.ts:25:13:
+      25 Ôöé     imports: [FuseLoadingBarComponent, FuseVerticalNavigationCompo...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/layout/layouts/vertical/dense/dense.component.ts:27:13:
+      27 Ôöé export class DenseLayoutComponent implements OnInit, OnDestroy
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/layout/layouts/vertical/futuristic/futuristic.component.ts:27:13:
+      27 Ôöé     imports: [FuseLoadingBarComponent, FuseVerticalNavigationCompo...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/layout/layouts/vertical/futuristic/futuristic.component.ts:29:13:
+      29 Ôöé export class FuturisticLayoutComponent implements OnInit, OnDestroy
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/layout/layouts/vertical/thin/thin.component.ts:25:13:
+      25 Ôöé     imports: [FuseLoadingBarComponent, FuseVerticalNavigationCompo...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/layout/layouts/vertical/thin/thin.component.ts:27:13:
+      27 Ôöé export class ThinLayoutComponent implements OnInit, OnDestroy
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/admin/booking-page/booking.component.ts:10:13:
+      10 Ôöé     imports: [RouterOutlet]
+         ÔòÁ              ~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/admin/booking-page/booking.component.ts:12:13:
+      12 Ôöé export class BookingComponent {
+         ÔòÁ              ~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/admin/booking-page/details/details.component.ts:37:13:
+      37 Ôöé     imports: [
+         ÔòÁ              ^
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/admin/booking-page/details/details.component.ts:45:13:
+      45 Ôöé export class BookingDetailsComponent implements OnInit, OnDestroy {
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/admin/booking-page/list/list.component.ts:48:13:
+      48 Ôöé     imports: [
+         ÔòÁ              ^
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/admin/booking-page/list/list.component.ts:73:13:
+      73 Ôöé export class BookingListComponent implements OnInit, OnDestroy {
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/admin/file-manager/file-manager.component.ts:9:13:
+      9 Ôöé     imports: [RouterOutlet]
+        ÔòÁ              ~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/admin/file-manager/file-manager.component.ts:11:13:
+      11 Ôöé export class FileManagerComponent
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/admin/file-manager/list/list.component.ts:25:13:
+      25 Ôöé     imports: [MatSidenavModule, RouterOutlet, NgIf, NgFor,MatButto...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/admin/file-manager/list/list.component.ts:27:13:
+      27 Ôöé export class FileManagerListComponent implements OnInit, OnDestroy {
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/admin/nutritionists/createNutritionist/createNutritionist.component.ts:22:13:
+      22 Ôöé     imports: [CommonModule, MatIconModule, ReactiveFormsModule, Ma...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/admin/nutritionists/createNutritionist/createNutritionist.component.ts:25:13:
+      25 Ôöé export class CreateNutritionistComponent {
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/admin/nutritionists/details/details.component.ts:54:13:
+      54 Ôöé     imports: [NgIf, MatButtonModule, MatTooltipModule, RouterLink,...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/admin/nutritionists/details/details.component.ts:56:13:
+      56 Ôöé export class NutritionistDetailsComponent implements OnInit, OnDes...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/admin/nutritionists/list/list.component.ts:40:13:
+      40 Ôöé     imports: [MatSidenavModule, RouterOutlet, NgIf, MatFormFieldMo...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/admin/nutritionists/list/list.component.ts:42:13:
+      42 Ôöé export class NutritionistsListComponent implements OnInit, OnDestr...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/admin/nutritionists/nutritionists.component.ts:9:13:
+      9 Ôöé     imports: [RouterOutlet]
+        ÔòÁ              ~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/admin/nutritionists/nutritionists.component.ts:11:13:
+      11 Ôöé export class NutritionistsComponent {
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/admin/objectives/details/details.component.ts:51:13:
+      51 Ôöé     imports: [FormsModule, ReactiveFormsModule, MatButtonModule, N...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/admin/objectives/details/details.component.ts:53:13:
+      53 Ôöé export class ObjectivesDetailsComponent implements OnInit, AfterVi...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/admin/objectives/list/list.component.ts:38:13:
+      38 Ôöé     imports: [MatSidenavModule, RouterOutlet, NgIf, MatButtonModul...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/admin/objectives/list/list.component.ts:40:13:
+      40 Ôöé export class ObjectivesListComponent implements OnInit, OnDestroy {
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/admin/objectives/objectives.component.ts:9:13:
+      9 Ôöé     imports: [
+        ÔòÁ              ^
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/admin/objectives/objectives.component.ts:13:13:
+      13 Ôöé export class ObjectivesComponent {
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/admin/patient-portal/patient.component.ts:9:13:
+      9 Ôöé     imports: [RouterOutlet],
+        ÔòÁ              ~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/admin/patient-portal/patient.component.ts:11:13:
+      11 Ôöé export class PatientComponent {}
+         ÔòÁ              ~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/admin/patients/dashboard/file-managment-patient/details/details.component.ts:17:13:
+      17 Ôöé     imports: [MatButtonModule, RouterLink, MatIconModule, NgIf]
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/admin/patients/dashboard/file-managment-patient/details/details.component.ts:19:13:
+      19 Ôöé export class FileManagerDetailsComponent implements OnInit, OnDestroy
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/admin/patients/dashboard/file-managment-patient/file.component.ts:9:13:
+      9 Ôöé     imports: [FileManagerListComponent]
+        ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/admin/patients/dashboard/file-managment-patient/file.component.ts:11:13:
+      11 Ôöé export class FileComponent
+         ÔòÁ              ~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/admin/patients/dashboard/file-managment-patient/list/list.component.ts:18:13:
+      18 Ôöé     imports: [MatSidenavModule, RouterOutlet, NgIf, RouterLink, Ng...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/admin/patients/dashboard/file-managment-patient/list/list.component.ts:20:13:
+      20 Ôöé export class FileManagerListComponent implements OnInit, OnDestroy
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/admin/patients/details/details.component.ts:57:13:
+      57 Ôöé     imports: [NgIf, MatButtonModule, MatTooltipModule, RouterLink,...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/admin/patients/details/details.component.ts:61:13:
+      61 Ôöé export class PatientsDetailsComponent implements OnInit, OnDestroy {
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/admin/patients/list/list.component.ts:39:13:
+      39 Ôöé     imports: [MatSidenavModule, RouterOutlet, NgIf, MatFormFieldMo...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/admin/patients/list/list.component.ts:41:13:
+      41 Ôöé export class PatientsListComponent implements OnInit, OnDestroy {
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/admin/patients/patients.component.ts:9:13:
+      9 Ôöé     imports: [RouterOutlet]
+        ÔòÁ              ~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/admin/patients/patients.component.ts:11:13:
+      11 Ôöé export class PatientsComponent {
+         ÔòÁ              ~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/admin/profile/profile.component.ts:26:13:
+      26 Ôöé     imports: [MatIconModule, MatButtonModule, MatMenuModule, MatFo...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/admin/profile/profile.component.ts:28:13:
+      28 Ôöé export class ProfileComponent implements OnInit {
+         ÔòÁ              ~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/admin/settings/notifications/notifications.component.ts:11:13:
+      11 Ôöé     imports: [FormsModule, ReactiveFormsModule, MatSlideToggleModu...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/admin/settings/notifications/notifications.component.ts:13:13:
+      13 Ôöé export class SettingsNotificationsComponent implements OnInit {
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/admin/settings/plan-billing/plan-billing.component.ts:18:13:
+      18 Ôöé     imports: [FormsModule, ReactiveFormsModule, FuseAlertComponent...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/admin/settings/plan-billing/plan-billing.component.ts:20:13:
+      20 Ôöé export class SettingsPlanBillingComponent implements OnInit {
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/admin/settings/security/security.component.ts:19:13:
+      19 Ôöé     imports: [FormsModule, ReactiveFormsModule, MatFormFieldModule...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/admin/settings/security/security.component.ts:21:13:
+      21 Ôöé export class SettingsSecurityComponent implements OnInit {
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/admin/settings/settings.component.ts:27:13:
+      27 Ôöé     imports: [MatSidenavModule, MatButtonModule, MatIconModule, Ng...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/admin/settings/settings.component.ts:29:13:
+      29 Ôöé export class SettingsComponent implements OnInit, OnDestroy {
+         ÔòÁ              ~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/admin/settings/team/team.component.ts:15:13:
+      15 Ôöé     imports: [MatFormFieldModule, MatIconModule, MatInputModule, M...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/admin/settings/team/team.component.ts:17:13:
+      17 Ôöé export class SettingsTeamComponent implements OnInit {
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/auth/confirmation-required/email/email-confirmation-required.component.ts:10:13:
+      10 Ôöé     imports: [RouterLink]
+         ÔòÁ              ~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/auth/confirmation-required/email/email-confirmation-required.component.ts:12:13:
+      12 Ôöé export class AuthEmailConfirmationRequiredComponent
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/auth/confirmation-required/phone/phone-confirmation-required.component.ts:26:13:
+      26 Ôöé     imports: [RouterLink, FormsModule, MatButtonModule, MatFormFie...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/auth/confirmation-required/phone/phone-confirmation-required.component.ts:28:13:
+      28 Ôöé export class AuthPhoneConfirmationRequiredComponent implements OnI...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/auth/forgot-password/email/forgot-password-email.component.ts:19:13:
+      19 Ôöé     imports: [NgIf, FuseAlertComponent, FormsModule, ReactiveForms...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/auth/forgot-password/email/forgot-password-email.component.ts:21:13:
+      21 Ôöé export class AuthForgotPasswordEmailComponent implements OnInit
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/auth/forgot-password/forgot-password.component.ts:17:13:
+      17 Ôöé     imports: [NgIf, FuseAlertComponent, FormsModule, ReactiveForms...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/auth/forgot-password/forgot-password.component.ts:19:13:
+      19 Ôöé export class AuthForgotPasswordComponent implements OnInit {
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/auth/forgot-password/phone/forgot-password-phone.component.ts:31:13:
+      31 Ôöé     imports: [NgIf, FuseAlertComponent, FormsModule, ReactiveForms...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/auth/forgot-password/phone/forgot-password-phone.component.ts:33:13:
+      33 Ôöé export class AuthForgotPasswordPhoneComponent implements OnInit
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/auth/reset-password/email/reset-password-email.component.ts:21:13:
+      21 Ôöé     imports: [NgIf, FuseAlertComponent, FormsModule, ReactiveForms...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/auth/reset-password/email/reset-password-email.component.ts:23:13:
+      23 Ôöé export class AuthResetPasswordEmailComponent implements OnInit
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/auth/reset-password/phone/reset-password-phone.component.ts:28:13:
+      28 Ôöé     imports: [NgIf, FuseAlertComponent, FormsModule, ReactiveForms...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/auth/reset-password/phone/reset-password-phone.component.ts:30:13:
+      30 Ôöé export class AuthResetPasswordPhoneComponent implements OnInit
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/auth/sign-in/sign-in.component.ts:29:13:
+      29 Ôöé     imports: [RouterLink, FuseAlertComponent, NgIf, FormsModule, R...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/auth/sign-in/sign-in.component.ts:31:13:
+      31 Ôöé export class AuthSignInComponent implements OnInit
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/auth/sign-out/sign-out.component.ts:11:13:
+      11 Ôöé     imports: [NgIf, RouterLink, I18nPluralPipe]
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/auth/sign-out/sign-out.component.ts:13:13:
+      13 Ôöé export class AuthSignOutComponent implements OnInit, OnDestroy
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/modules/auth/unlock-session/unlock-session.component.ts:20:13:
+      20 Ôöé     imports: [NgIf, FuseAlertComponent, FormsModule, ReactiveForms...
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/modules/auth/unlock-session/unlock-session.component.ts:22:13:
+      22 Ôöé export class AuthUnlockSessionComponent implements OnInit
+         ÔòÁ              ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] Undefined mixin.
+   ÔòÀ
+84 Ôöé @include mat.elevation-classes();
+   Ôöé ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ÔòÁ
+  src\@fuse\styles\themes.scss 84:1  root stylesheet [plugin angular-sass]
+
+    angular:styles/global:styles:2:8:
+      2 Ôöé @import 'src/@fuse/styles/themes.scss';
+        ÔòÁ         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Application bundle generation failed. [18.449 seconds]

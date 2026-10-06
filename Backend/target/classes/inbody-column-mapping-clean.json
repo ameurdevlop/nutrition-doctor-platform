@@ -1,0 +1,1885 @@
+{
+  "version": "1.0",
+  "description": "Mapping entre les colonnes du fichier CSV InBody et les attributs de la table inbody_measurements",
+  "csvFormat": {
+    "separator": "\t",
+    "encoding": "UTF-8",
+    "hasHeader": true,
+    "skipLines": 0
+  },
+  "columnMappings": [
+    {
+      "csvColumnIndex": 0,
+      "csvColumnName": "Name",
+      "entityAttribute": "name",
+      "dataType": "String",
+      "required": false,
+      "description": "Nom du patient"
+    },
+    {
+      "csvColumnIndex": 1,
+      "csvColumnName": "ID",
+      "entityAttribute": "patientId",
+      "dataType": "Integer",
+      "required": true,
+      "description": "Numéro de téléphone du patient (utilisé pour trouver user_id)"
+    },
+    {
+      "csvColumnIndex": 2,
+      "csvColumnName": "Height",
+      "entityAttribute": "height",
+      "dataType": "Double",
+      "required": false,
+      "description": "Taille en cm"
+    },
+    {
+      "csvColumnIndex": 3,
+      "csvColumnName": "Date of Birth",
+      "entityAttribute": "dateOfBirth",
+      "dataType": "String",
+      "required": false,
+      "description": "Date de naissance"
+    },
+    {
+      "csvColumnIndex": 4,
+      "csvColumnName": "Gender",
+      "entityAttribute": "gender",
+      "dataType": "String",
+      "required": false,
+      "description": "Genre (Male/Female)"
+    },
+    {
+      "csvColumnIndex": 5,
+      "csvColumnName": "Age",
+      "entityAttribute": "age",
+      "dataType": "Integer",
+      "required": false,
+      "description": "Âge"
+    },
+    {
+      "csvColumnIndex": 6,
+      "csvColumnName": "Mobile Number",
+      "entityAttribute": "mobileNumber",
+      "dataType": "String",
+      "required": false,
+      "description": "Numéro de téléphone mobile"
+    },
+    {
+      "csvColumnIndex": 7,
+      "csvColumnName": "Phone Number",
+      "entityAttribute": "phoneNumber",
+      "dataType": "String",
+      "required": false,
+      "description": "Numéro de téléphone fixe"
+    },
+    {
+      "csvColumnIndex": 8,
+      "csvColumnName": "Zip Code",
+      "entityAttribute": "zipCode",
+      "dataType": "String",
+      "required": false,
+      "description": "Code postal"
+    },
+    {
+      "csvColumnIndex": 9,
+      "csvColumnName": "Address",
+      "entityAttribute": "address",
+      "dataType": "String",
+      "required": false,
+      "description": "Adresse"
+    },
+    {
+      "csvColumnIndex": 10,
+      "csvColumnName": "E-mail",
+      "entityAttribute": "eMail",
+      "dataType": "String",
+      "required": false,
+      "description": "Email"
+    },
+    {
+      "csvColumnIndex": 11,
+      "csvColumnName": "Date of Registration",
+      "entityAttribute": "dateOfRegistration",
+      "dataType": "String",
+      "required": false,
+      "description": "Date d'enregistrement"
+    },
+    {
+      "csvColumnIndex": 12,
+      "csvColumnName": "Memo",
+      "entityAttribute": "memo",
+      "dataType": "String",
+      "required": false,
+      "description": "Mémo"
+    },
+    {
+      "csvColumnIndex": 13,
+      "csvColumnName": "Test Date / Time",
+      "entityAttribute": "testDateTime",
+      "dataType": "LocalDateTime",
+      "dateFormat": "yyyy.MM.dd. HH:mm:ss",
+      "required": false,
+      "description": "Date et heure du test"
+    },
+    {
+      "csvColumnIndex": 14,
+      "csvColumnName": "Weight",
+      "entityAttribute": "weight",
+      "dataType": "Double",
+      "required": false,
+      "description": "Poids en kg"
+    },
+    {
+      "csvColumnIndex": 15,
+      "csvColumnName": "Lower Limit (Weight Normal Range)",
+      "entityAttribute": "weightLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure du poids normal"
+    },
+    {
+      "csvColumnIndex": 16,
+      "csvColumnName": "Upper Limit (Weight Normal Range)",
+      "entityAttribute": "weightUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure du poids normal"
+    },
+    {
+      "csvColumnIndex": 17,
+      "csvColumnName": "TBW (Total Body Water)",
+      "entityAttribute": "totalBodyWater",
+      "dataType": "Double",
+      "required": false,
+      "description": "Eau corporelle totale"
+    },
+    {
+      "csvColumnIndex": 18,
+      "csvColumnName": "Lower Limit (TBW Normal Range)",
+      "entityAttribute": "tbwLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure TBW"
+    },
+    {
+      "csvColumnIndex": 19,
+      "csvColumnName": "UpperLimit",
+      "entityAttribute": "tbwUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure TBW"
+    },
+    {
+      "csvColumnIndex": 20,
+      "csvColumnName": "ICW (Intracellular Water)",
+      "entityAttribute": "intracellularWater",
+      "dataType": "Double",
+      "required": false,
+      "description": "Eau intracellulaire"
+    },
+    {
+      "csvColumnIndex": 21,
+      "csvColumnName": "Lower Limit (ICW Normal Range)",
+      "entityAttribute": "icwLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure ICW"
+    },
+    {
+      "csvColumnIndex": 22,
+      "csvColumnName": "Upper Limit (ICW Normal Range)",
+      "entityAttribute": "icwUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure ICW"
+    },
+    {
+      "csvColumnIndex": 23,
+      "csvColumnName": "ECW (Extracellular Water)",
+      "entityAttribute": "extracellularWater",
+      "dataType": "Double",
+      "required": false,
+      "description": "Eau extracellulaire"
+    },
+    {
+      "csvColumnIndex": 24,
+      "csvColumnName": "Lower Limit (ECW Normal Range)",
+      "entityAttribute": "ecwLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure ECW"
+    },
+    {
+      "csvColumnIndex": 25,
+      "csvColumnName": "Upper Limit (ECW Normal Range)",
+      "entityAttribute": "ecwUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure ECW"
+    },
+    {
+      "csvColumnIndex": 26,
+      "csvColumnName": "Protein",
+      "entityAttribute": "protein",
+      "dataType": "Double",
+      "required": false,
+      "description": "Protéines"
+    },
+    {
+      "csvColumnIndex": 27,
+      "csvColumnName": "Lower Limit (Protein Normal Range)",
+      "entityAttribute": "proteinLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure protéines"
+    },
+    {
+      "csvColumnIndex": 28,
+      "csvColumnName": "Upper Limit (Protein Normal Range)",
+      "entityAttribute": "proteinUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure protéines"
+    },
+    {
+      "csvColumnIndex": 29,
+      "csvColumnName": "Minerals",
+      "entityAttribute": "minerals",
+      "dataType": "Double",
+      "required": false,
+      "description": "Minéraux"
+    },
+    {
+      "csvColumnIndex": 30,
+      "csvColumnName": "Lower Limit (Minerals Normal Range)",
+      "entityAttribute": "mineralsLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure minéraux"
+    },
+    {
+      "csvColumnIndex": 31,
+      "csvColumnName": "Upper Limit (Minerals Normal Range)",
+      "entityAttribute": "mineralsUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure minéraux"
+    },
+    {
+      "csvColumnIndex": 32,
+      "csvColumnName": "BFM (Body Fat Mass)",
+      "entityAttribute": "bodyFatMass",
+      "dataType": "Double",
+      "required": false,
+      "description": "Masse grasse"
+    },
+    {
+      "csvColumnIndex": 33,
+      "csvColumnName": "Lower Limit (BFM Normal Range)",
+      "entityAttribute": "bfmLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure masse grasse"
+    },
+    {
+      "csvColumnIndex": 34,
+      "csvColumnName": "Upper Limit (BFM Normal Range)",
+      "entityAttribute": "bfmUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure masse grasse"
+    },
+    {
+      "csvColumnIndex": 35,
+      "csvColumnName": "SLM (Soft Lean Mass)",
+      "entityAttribute": "softLeanMass",
+      "dataType": "Double",
+      "required": false,
+      "description": "Masse maigre douce"
+    },
+    {
+      "csvColumnIndex": 36,
+      "csvColumnName": "Lower Limit (SLM Normal Range)",
+      "entityAttribute": "slmLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure SLM"
+    },
+    {
+      "csvColumnIndex": 37,
+      "csvColumnName": "Upper Limit (SLM Normal Range)",
+      "entityAttribute": "slmUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure SLM"
+    },
+    {
+      "csvColumnIndex": 38,
+      "csvColumnName": "FFM (Fat Free Mass)",
+      "entityAttribute": "fatFreeMass",
+      "dataType": "Double",
+      "required": false,
+      "description": "Masse sans graisse"
+    },
+    {
+      "csvColumnIndex": 39,
+      "csvColumnName": "Lower Limit (FFM Normal Range)",
+      "entityAttribute": "ffmLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure FFM"
+    },
+    {
+      "csvColumnIndex": 40,
+      "csvColumnName": "Upper Limit (FFM Normal Range)",
+      "entityAttribute": "ffmUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure FFM"
+    },
+    {
+      "csvColumnIndex": 41,
+      "csvColumnName": "SMM (Skeletal Muscle Mass)",
+      "entityAttribute": "skeletalMuscleMass",
+      "dataType": "Double",
+      "required": false,
+      "description": "Masse musculaire squelettique"
+    },
+    {
+      "csvColumnIndex": 42,
+      "csvColumnName": "Lower Limit (SMM Normal Range)",
+      "entityAttribute": "smmLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure SMM"
+    },
+    {
+      "csvColumnIndex": 43,
+      "csvColumnName": "Upper Limit (SMM Normal Range)",
+      "entityAttribute": "smmUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure SMM"
+    },
+    {
+      "csvColumnIndex": 44,
+      "csvColumnName": "BMI (Body Mass Index)",
+      "entityAttribute": "bmi",
+      "dataType": "Double",
+      "required": false,
+      "description": "Indice de masse corporelle"
+    },
+    {
+      "csvColumnIndex": 45,
+      "csvColumnName": "Lower Limit (BMI Normal Range)",
+      "entityAttribute": "bmiLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure BMI"
+    },
+    {
+      "csvColumnIndex": 46,
+      "csvColumnName": "Upper Limit (BMI Normal Range)",
+      "entityAttribute": "bmiUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure BMI"
+    },
+    {
+      "csvColumnIndex": 47,
+      "csvColumnName": "PBF (Percent Body Fat)",
+      "entityAttribute": "percentBodyFat",
+      "dataType": "Double",
+      "required": false,
+      "description": "Pourcentage de graisse corporelle"
+    },
+    {
+      "csvColumnIndex": 48,
+      "csvColumnName": "Lower Limit (PBF Normal Range)",
+      "entityAttribute": "pbfLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure PBF"
+    },
+    {
+      "csvColumnIndex": 49,
+      "csvColumnName": "Upper Limit (PBF Normal Range)",
+      "entityAttribute": "pbfUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure PBF"
+    },
+    {
+      "csvColumnIndex": 50,
+      "csvColumnName": "FFM of Right Arm",
+      "entityAttribute": "ffmRightArm",
+      "dataType": "Double",
+      "required": false,
+      "description": "FFM bras droit"
+    },
+    {
+      "csvColumnIndex": 51,
+      "csvColumnName": "Lower Limit (FFM of Right Arm Normal Range)",
+      "entityAttribute": "ffmRightArmLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure FFM bras droit"
+    },
+    {
+      "csvColumnIndex": 52,
+      "csvColumnName": "Upper Limit (FFM of Right Arm Normal Range)",
+      "entityAttribute": "ffmRightArmUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure FFM bras droit"
+    },
+    {
+      "csvColumnIndex": 53,
+      "csvColumnName": "FFM% of Right Arm",
+      "entityAttribute": "ffmPercentRightArm",
+      "dataType": "Double",
+      "required": false,
+      "description": "Pourcentage FFM bras droit"
+    },
+    {
+      "csvColumnIndex": 54,
+      "csvColumnName": "FFM of Left Arm",
+      "entityAttribute": "ffmLeftArm",
+      "dataType": "Double",
+      "required": false,
+      "description": "FFM bras gauche"
+    },
+    {
+      "csvColumnIndex": 55,
+      "csvColumnName": "Lower Limit (FFM of Left Arm Normal Range)",
+      "entityAttribute": "ffmLeftArmLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure FFM bras gauche"
+    },
+    {
+      "csvColumnIndex": 56,
+      "csvColumnName": "Upper Limit (FFM of Left Arm Normal Range)",
+      "entityAttribute": "ffmLeftArmUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure FFM bras gauche"
+    },
+    {
+      "csvColumnIndex": 57,
+      "csvColumnName": "FFM% of Left Arm",
+      "entityAttribute": "ffmPercentLeftArm",
+      "dataType": "Double",
+      "required": false,
+      "description": "Pourcentage FFM bras gauche"
+    },
+    {
+      "csvColumnIndex": 58,
+      "csvColumnName": "FFM of Trunk",
+      "entityAttribute": "ffmTrunk",
+      "dataType": "Double",
+      "required": false,
+      "description": "FFM tronc"
+    },
+    {
+      "csvColumnIndex": 59,
+      "csvColumnName": "Lower Limit (FFM of Trunk Normal Range)",
+      "entityAttribute": "ffmTrunkLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure FFM tronc"
+    },
+    {
+      "csvColumnIndex": 60,
+      "csvColumnName": "Upper Limit (FFM of Trunk Normal Range)",
+      "entityAttribute": "ffmTrunkUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure FFM tronc"
+    },
+    {
+      "csvColumnIndex": 61,
+      "csvColumnName": "FFM% of Trunk",
+      "entityAttribute": "ffmPercentTrunk",
+      "dataType": "Double",
+      "required": false,
+      "description": "Pourcentage FFM tronc"
+    },
+    {
+      "csvColumnIndex": 62,
+      "csvColumnName": "FFM of Right Leg",
+      "entityAttribute": "ffmRightLeg",
+      "dataType": "Double",
+      "required": false,
+      "description": "FFM jambe droite"
+    },
+    {
+      "csvColumnIndex": 63,
+      "csvColumnName": "Lower Limit (FFM of Right Leg Normal Range)",
+      "entityAttribute": "ffmRightLegLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure FFM jambe droite"
+    },
+    {
+      "csvColumnIndex": 64,
+      "csvColumnName": "Upper Limit (FFM of Right Leg Normal Range)",
+      "entityAttribute": "ffmRightLegUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure FFM jambe droite"
+    },
+    {
+      "csvColumnIndex": 65,
+      "csvColumnName": "FFM% of Right Leg",
+      "entityAttribute": "ffmPercentRightLeg",
+      "dataType": "Double",
+      "required": false,
+      "description": "Pourcentage FFM jambe droite"
+    },
+    {
+      "csvColumnIndex": 66,
+      "csvColumnName": "FFM of Left Leg",
+      "entityAttribute": "ffmLeftLeg",
+      "dataType": "Double",
+      "required": false,
+      "description": "FFM jambe gauche"
+    },
+    {
+      "csvColumnIndex": 67,
+      "csvColumnName": "Lower Limit (FFM of Left Leg Normal Range)",
+      "entityAttribute": "ffmLeftLegLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure FFM jambe gauche"
+    },
+    {
+      "csvColumnIndex": 68,
+      "csvColumnName": "Upper Limit (FFM of Left Leg Normal Range)",
+      "entityAttribute": "ffmLeftLegUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure FFM jambe gauche"
+    },
+    {
+      "csvColumnIndex": 69,
+      "csvColumnName": "FFM% of Left Leg",
+      "entityAttribute": "ffmPercentLeftLeg",
+      "dataType": "Double",
+      "required": false,
+      "description": "Pourcentage FFM jambe gauche"
+    },
+    {
+      "csvColumnIndex": 70,
+      "csvColumnName": "TBW of Right Arm",
+      "entityAttribute": "tbwRightArm",
+      "dataType": "Double",
+      "required": false,
+      "description": "TBW bras droit"
+    },
+    {
+      "csvColumnIndex": 71,
+      "csvColumnName": "Lower Limit (TBW of Right Arm Normal Range)",
+      "entityAttribute": "tbwRightArmLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure TBW bras droit"
+    },
+    {
+      "csvColumnIndex": 72,
+      "csvColumnName": "Upper Limit (TBW of Right Arm Normal Range)",
+      "entityAttribute": "tbwRightArmUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure TBW bras droit"
+    },
+    {
+      "csvColumnIndex": 73,
+      "csvColumnName": "TBW of Left Arm",
+      "entityAttribute": "tbwLeftArm",
+      "dataType": "Double",
+      "required": false,
+      "description": "TBW bras gauche"
+    },
+    {
+      "csvColumnIndex": 74,
+      "csvColumnName": "Lower Limit (TBW of Left Arm Normal Range)",
+      "entityAttribute": "tbwLeftArmLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure TBW bras gauche"
+    },
+    {
+      "csvColumnIndex": 75,
+      "csvColumnName": "Upper Limit (TBW of Left Arm Normal Range)",
+      "entityAttribute": "tbwLeftArmUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure TBW bras gauche"
+    },
+    {
+      "csvColumnIndex": 76,
+      "csvColumnName": "TBW of Trunk",
+      "entityAttribute": "tbwTrunk",
+      "dataType": "Double",
+      "required": false,
+      "description": "TBW tronc"
+    },
+    {
+      "csvColumnIndex": 77,
+      "csvColumnName": "Lower Limit (TBW of Trunk Normal Range)",
+      "entityAttribute": "tbwTrunkLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure TBW tronc"
+    },
+    {
+      "csvColumnIndex": 78,
+      "csvColumnName": "Upper Limit (TBW of Trunk Normal Range)",
+      "entityAttribute": "tbwTrunkUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure TBW tronc"
+    },
+    {
+      "csvColumnIndex": 79,
+      "csvColumnName": "TBW of Right Leg",
+      "entityAttribute": "tbwRightLeg",
+      "dataType": "Double",
+      "required": false,
+      "description": "TBW jambe droite"
+    },
+    {
+      "csvColumnIndex": 80,
+      "csvColumnName": "Lower Limit (TBW of Right Leg Normal Range)",
+      "entityAttribute": "tbwRightLegLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure TBW jambe droite"
+    },
+    {
+      "csvColumnIndex": 81,
+      "csvColumnName": "Upper Limit (TBW of Right Leg Normal Range)",
+      "entityAttribute": "tbwRightLegUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure TBW jambe droite"
+    },
+    {
+      "csvColumnIndex": 82,
+      "csvColumnName": "TBW of Left Leg",
+      "entityAttribute": "tbwLeftLeg",
+      "dataType": "Double",
+      "required": false,
+      "description": "TBW jambe gauche"
+    },
+    {
+      "csvColumnIndex": 83,
+      "csvColumnName": "Lower Limit (TBW of Left Leg Normal Range)",
+      "entityAttribute": "tbwLeftLegLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure TBW jambe gauche"
+    },
+    {
+      "csvColumnIndex": 84,
+      "csvColumnName": "Upper Limit (TBW of Left Leg Normal Range)",
+      "entityAttribute": "tbwLeftLegUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure TBW jambe gauche"
+    },
+    {
+      "csvColumnIndex": 85,
+      "csvColumnName": "ICW of Right Arm",
+      "entityAttribute": "icwRightArm",
+      "dataType": "Double",
+      "required": false,
+      "description": "ICW bras droit"
+    },
+    {
+      "csvColumnIndex": 86,
+      "csvColumnName": "Lower Limit (ICW of Right Arm Normal Range)",
+      "entityAttribute": "icwRightArmLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure ICW bras droit"
+    },
+    {
+      "csvColumnIndex": 87,
+      "csvColumnName": "Upper Limit (ICW of Right Arm Normal Range)",
+      "entityAttribute": "icwRightArmUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure ICW bras droit"
+    },
+    {
+      "csvColumnIndex": 88,
+      "csvColumnName": "ICW of Left Arm",
+      "entityAttribute": "icwLeftArm",
+      "dataType": "Double",
+      "required": false,
+      "description": "ICW bras gauche"
+    },
+    {
+      "csvColumnIndex": 89,
+      "csvColumnName": "Lower Limit (ICW of Left Arm Normal Range)",
+      "entityAttribute": "icwLeftArmLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure ICW bras gauche"
+    },
+    {
+      "csvColumnIndex": 90,
+      "csvColumnName": "Upper Limit (ICW of Left Arm Normal Range)",
+      "entityAttribute": "icwLeftArmUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure ICW bras gauche"
+    },
+    {
+      "csvColumnIndex": 91,
+      "csvColumnName": "ICW of Trunk",
+      "entityAttribute": "icwTrunk",
+      "dataType": "Double",
+      "required": false,
+      "description": "ICW tronc"
+    },
+    {
+      "csvColumnIndex": 92,
+      "csvColumnName": "Lower Limit (ICW of Trunk Normal Range)",
+      "entityAttribute": "icwTrunkLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure ICW tronc"
+    },
+    {
+      "csvColumnIndex": 93,
+      "csvColumnName": "Upper Limit (ICW of Trunk Normal Range)",
+      "entityAttribute": "icwTrunkUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure ICW tronc"
+    },
+    {
+      "csvColumnIndex": 94,
+      "csvColumnName": "ICW of Right Leg",
+      "entityAttribute": "icwRightLeg",
+      "dataType": "Double",
+      "required": false,
+      "description": "ICW jambe droite"
+    },
+    {
+      "csvColumnIndex": 95,
+      "csvColumnName": "Lower Limit (ICW of Right Leg Normal Range)",
+      "entityAttribute": "icwRightLegLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure ICW jambe droite"
+    },
+    {
+      "csvColumnIndex": 96,
+      "csvColumnName": "Upper Limit (ICW of Right Leg Normal Range)",
+      "entityAttribute": "icwRightLegUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure ICW jambe droite"
+    },
+    {
+      "csvColumnIndex": 97,
+      "csvColumnName": "ICW of Left Leg",
+      "entityAttribute": "icwLeftLeg",
+      "dataType": "Double",
+      "required": false,
+      "description": "ICW jambe gauche"
+    },
+    {
+      "csvColumnIndex": 98,
+      "csvColumnName": "Lower Limit (ICW of Left Leg Normal Range)",
+      "entityAttribute": "icwLeftLegLowerLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure ICW jambe gauche"
+    },
+    {
+      "csvColumnIndex": 99,
+      "csvColumnName": "Upper Limit (ICW of Left Leg Normal Range)",
+      "entityAttribute": "icwLeftLegUpperLimit",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure ICW jambe gauche"
+    },
+    {
+      "csvColumnIndex": 100,
+      "csvColumnName": "ECW of Right Arm",
+      "entityAttribute": "ecwOfRightArm",
+      "dataType": "Double",
+      "required": false,
+      "description": "ECW bras droit"
+    },
+    {
+      "csvColumnIndex": 101,
+      "csvColumnName": "Lower Limit (ECW of Right Arm Normal Range)",
+      "entityAttribute": "lowerLimitEcwOfRightArmNormalRange",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure ECW bras droit"
+    },
+    {
+      "csvColumnIndex": 102,
+      "csvColumnName": "Upper Limit (ECW of Right Arm Normal Range)",
+      "entityAttribute": "upperLimitEcwOfRightArmNormalRange",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure ECW bras droit"
+    },
+    {
+      "csvColumnIndex": 103,
+      "csvColumnName": "ECW of Left Arm",
+      "entityAttribute": "ecwOfLeftArm",
+      "dataType": "Double",
+      "required": false,
+      "description": "ECW bras gauche"
+    },
+    {
+      "csvColumnIndex": 104,
+      "csvColumnName": "Lower Limit (ECW of Left Arm Normal Range)",
+      "entityAttribute": "lowerLimitEcwOfLeftArmNormalRange",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure ECW bras gauche"
+    },
+    {
+      "csvColumnIndex": 105,
+      "csvColumnName": "Upper Limit (ECW of Left Arm Normal Range)",
+      "entityAttribute": "upperLimitEcwOfLeftArmNormalRange",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure ECW bras gauche"
+    },
+    {
+      "csvColumnIndex": 106,
+      "csvColumnName": "ECW of Trunk",
+      "entityAttribute": "ecwOfTrunk",
+      "dataType": "Double",
+      "required": false,
+      "description": "ECW tronc"
+    },
+    {
+      "csvColumnIndex": 107,
+      "csvColumnName": "Lower Limit (ECW of Trunk Normal Range)",
+      "entityAttribute": "lowerLimitEcwOfTrunkNormalRange",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure ECW tronc"
+    },
+    {
+      "csvColumnIndex": 108,
+      "csvColumnName": "Upper Limit (ECW of Trunk Normal Range)",
+      "entityAttribute": "upperLimitEcwOfTrunkNormalRange",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure ECW tronc"
+    },
+    {
+      "csvColumnIndex": 109,
+      "csvColumnName": "ECW of Right Leg",
+      "entityAttribute": "ecwOfRightLeg",
+      "dataType": "Double",
+      "required": false,
+      "description": "ECW jambe droite"
+    },
+    {
+      "csvColumnIndex": 110,
+      "csvColumnName": "Lower Limit (ECW of Right Leg Normal Range)",
+      "entityAttribute": "lowerLimitEcwOfRightLegNormalRange",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure ECW jambe droite"
+    },
+    {
+      "csvColumnIndex": 111,
+      "csvColumnName": "Upper Limit (ECW of Right Leg Normal Range)",
+      "entityAttribute": "upperLimitEcwOfRightLegNormalRange",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure ECW jambe droite"
+    },
+    {
+      "csvColumnIndex": 112,
+      "csvColumnName": "ECW of Left Leg",
+      "entityAttribute": "ecwOfLeftLeg",
+      "dataType": "Double",
+      "required": false,
+      "description": "ECW jambe gauche"
+    },
+    {
+      "csvColumnIndex": 113,
+      "csvColumnName": "Lower Limit (ECW of Left Leg Normal Range)",
+      "entityAttribute": "lowerLimitEcwOfLeftLegNormalRange",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure ECW jambe gauche"
+    },
+    {
+      "csvColumnIndex": 114,
+      "csvColumnName": "Upper Limit (ECW of Left Leg Normal Range)",
+      "entityAttribute": "upperLimitEcwOfLeftLegNormalRange",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure ECW jambe gauche"
+    },
+    {
+      "csvColumnIndex": 115,
+      "csvColumnName": "ECW/TBW",
+      "entityAttribute": "ecwTbw",
+      "dataType": "Double",
+      "required": false,
+      "description": "Ratio ECW/TBW"
+    },
+    {
+      "csvColumnIndex": 116,
+      "csvColumnName": "ECW/TBW of Right Arm",
+      "entityAttribute": "ecwTbwOfRightArm",
+      "dataType": "Double",
+      "required": false,
+      "description": "Ratio ECW/TBW bras droit"
+    },
+    {
+      "csvColumnIndex": 117,
+      "csvColumnName": "ECW/TBW of Left Arm",
+      "entityAttribute": "ecwTbwOfLeftArm",
+      "dataType": "Double",
+      "required": false,
+      "description": "Ratio ECW/TBW bras gauche"
+    },
+    {
+      "csvColumnIndex": 118,
+      "csvColumnName": "ECW/TBW of Trunk",
+      "entityAttribute": "ecwTbwOfTrunk",
+      "dataType": "Double",
+      "required": false,
+      "description": "Ratio ECW/TBW tronc"
+    },
+    {
+      "csvColumnIndex": 119,
+      "csvColumnName": "ECW/TBW of Right Leg",
+      "entityAttribute": "ecwTbwOfRightLeg",
+      "dataType": "Double",
+      "required": false,
+      "description": "Ratio ECW/TBW jambe droite"
+    },
+    {
+      "csvColumnIndex": 120,
+      "csvColumnName": "ECW/TBW of Left Leg",
+      "entityAttribute": "ecwTbwOfLeftLeg",
+      "dataType": "Double",
+      "required": false,
+      "description": "Ratio ECW/TBW jambe gauche"
+    },
+    {
+      "csvColumnIndex": 121,
+      "csvColumnName": "BFM of Right Arm",
+      "entityAttribute": "bfmOfRightArm",
+      "dataType": "Double",
+      "required": false,
+      "description": "BFM bras droit"
+    },
+    {
+      "csvColumnIndex": 122,
+      "csvColumnName": "BFM% of Right Arm",
+      "entityAttribute": "bfmPercentOfRightArm",
+      "dataType": "Double",
+      "required": false,
+      "description": "Pourcentage BFM bras droit"
+    },
+    {
+      "csvColumnIndex": 123,
+      "csvColumnName": "BFM of Left Arm",
+      "entityAttribute": "bfmOfLeftArm",
+      "dataType": "Double",
+      "required": false,
+      "description": "BFM bras gauche"
+    },
+    {
+      "csvColumnIndex": 124,
+      "csvColumnName": "BFM% of Left Arm",
+      "entityAttribute": "bfmPercentOfLeftArm",
+      "dataType": "Double",
+      "required": false,
+      "description": "Pourcentage BFM bras gauche"
+    },
+    {
+      "csvColumnIndex": 125,
+      "csvColumnName": "BFM of Trunk",
+      "entityAttribute": "bfmOfTrunk",
+      "dataType": "Double",
+      "required": false,
+      "description": "BFM tronc"
+    },
+    {
+      "csvColumnIndex": 126,
+      "csvColumnName": "BFM% of Trunk",
+      "entityAttribute": "bfmPercentOfTrunk",
+      "dataType": "Double",
+      "required": false,
+      "description": "Pourcentage BFM tronc"
+    },
+    {
+      "csvColumnIndex": 127,
+      "csvColumnName": "BFM of Right Leg",
+      "entityAttribute": "bfmOfRightLeg",
+      "dataType": "Double",
+      "required": false,
+      "description": "BFM jambe droite"
+    },
+    {
+      "csvColumnIndex": 128,
+      "csvColumnName": "BFM% of Right Leg",
+      "entityAttribute": "bfmPercentOfRightLeg",
+      "dataType": "Double",
+      "required": false,
+      "description": "Pourcentage BFM jambe droite"
+    },
+    {
+      "csvColumnIndex": 129,
+      "csvColumnName": "BFM of Left Leg",
+      "entityAttribute": "bfmOfLeftLeg",
+      "dataType": "Double",
+      "required": false,
+      "description": "BFM jambe gauche"
+    },
+    {
+      "csvColumnIndex": 130,
+      "csvColumnName": "BFM% of Left Leg",
+      "entityAttribute": "bfmPercentOfLeftLeg",
+      "dataType": "Double",
+      "required": false,
+      "description": "Pourcentage BFM jambe gauche"
+    },
+    {
+      "csvColumnIndex": 131,
+      "csvColumnName": "InBody Score",
+      "entityAttribute": "inbodyScore",
+      "dataType": "Integer",
+      "required": false,
+      "description": "Score InBody"
+    },
+    {
+      "csvColumnIndex": 132,
+      "csvColumnName": "Target Weight",
+      "entityAttribute": "targetWeight",
+      "dataType": "Double",
+      "required": false,
+      "description": "Poids cible"
+    },
+    {
+      "csvColumnIndex": 133,
+      "csvColumnName": "Weight Control",
+      "entityAttribute": "weightControl",
+      "dataType": "Double",
+      "required": false,
+      "description": "Contrôle du poids"
+    },
+    {
+      "csvColumnIndex": 134,
+      "csvColumnName": "BFM Control",
+      "entityAttribute": "bfmControl",
+      "dataType": "Double",
+      "required": false,
+      "description": "Contrôle BFM"
+    },
+    {
+      "csvColumnIndex": 135,
+      "csvColumnName": "FFM Control",
+      "entityAttribute": "ffmControl",
+      "dataType": "Double",
+      "required": false,
+      "description": "Contrôle FFM"
+    },
+    {
+      "csvColumnIndex": 136,
+      "csvColumnName": "BMR (Basal Metabolic Rate)",
+      "entityAttribute": "bmrBasalMetabolicRate",
+      "dataType": "Double",
+      "required": false,
+      "description": "Taux métabolique basal"
+    },
+    {
+      "csvColumnIndex": 137,
+      "csvColumnName": "WHR (Waist-Hip Ratio)",
+      "entityAttribute": "whrWaistHipRatio",
+      "dataType": "Double",
+      "required": false,
+      "description": "Ratio taille/hanches"
+    },
+    {
+      "csvColumnIndex": 138,
+      "csvColumnName": "Lower Limit (WHR Normal Range)",
+      "entityAttribute": "lowerLimitWhrNormalRange",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure WHR"
+    },
+    {
+      "csvColumnIndex": 139,
+      "csvColumnName": "Upper Limit (WHR Normal Range)",
+      "entityAttribute": "upperLimitWhrNormalRange",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure WHR"
+    },
+    {
+      "csvColumnIndex": 140,
+      "csvColumnName": "VFL (Visceral Fat Level)",
+      "entityAttribute": "vflVisceralFatLevel",
+      "dataType": "Integer",
+      "required": false,
+      "description": "Niveau de graisse viscérale"
+    },
+    {
+      "csvColumnIndex": 141,
+      "csvColumnName": "VFA (Visceral Fat Area)",
+      "entityAttribute": "vfaVisceralFatArea",
+      "dataType": "Double",
+      "required": false,
+      "description": "Surface de graisse viscérale"
+    },
+    {
+      "csvColumnIndex": 142,
+      "csvColumnName": "Obesity Degree",
+      "entityAttribute": "obesityDegree",
+      "dataType": "Double",
+      "required": false,
+      "description": "Degré d'obésité"
+    },
+    {
+      "csvColumnIndex": 143,
+      "csvColumnName": "Lower Limit (Obesity Degree Normal Range)",
+      "entityAttribute": "lowerLimitObesityDegreeNormalRange",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure degré d'obésité"
+    },
+    {
+      "csvColumnIndex": 144,
+      "csvColumnName": "Upper Limit (Obesity Degree Normal Range)",
+      "entityAttribute": "upperLimitObesityDegreeNormalRange",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure degré d'obésité"
+    },
+    {
+      "csvColumnIndex": 145,
+      "csvColumnName": "BCM (Body Cell Mass)",
+      "entityAttribute": "bcmBodyCellMass",
+      "dataType": "Double",
+      "required": false,
+      "description": "Masse cellulaire corporelle"
+    },
+    {
+      "csvColumnIndex": 146,
+      "csvColumnName": "Lower Limit (BCM Normal Range)",
+      "entityAttribute": "lowerLimitBcmNormalRange",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure BCM"
+    },
+    {
+      "csvColumnIndex": 147,
+      "csvColumnName": "Upper Limit (BCM Normal Range)",
+      "entityAttribute": "upperLimitBcmNormalRange",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure BCM"
+    },
+    {
+      "csvColumnIndex": 148,
+      "csvColumnName": "AC (Arm Circumference)",
+      "entityAttribute": "acArmCircumference",
+      "dataType": "Double",
+      "required": false,
+      "description": "Circonférence du bras"
+    },
+    {
+      "csvColumnIndex": 149,
+      "csvColumnName": "AMC (Arm Muscle Circumference)",
+      "entityAttribute": "amcArmMuscleCircumference",
+      "dataType": "Double",
+      "required": false,
+      "description": "Circonférence musculaire du bras"
+    },
+    {
+      "csvColumnIndex": 150,
+      "csvColumnName": "BMC (Bone Mineral Content)",
+      "entityAttribute": "bmcBoneMineralContent",
+      "dataType": "Double",
+      "required": false,
+      "description": "Contenu minéral osseux"
+    },
+    {
+      "csvColumnIndex": 151,
+      "csvColumnName": "Lower Limit (BMC Normal Range)",
+      "entityAttribute": "lowerLimitBmcNormalRange",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure BMC"
+    },
+    {
+      "csvColumnIndex": 152,
+      "csvColumnName": "Upper Limit (BMC Normal Range)",
+      "entityAttribute": "upperLimitBmcNormalRange",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure BMC"
+    },
+    {
+      "csvColumnIndex": 153,
+      "csvColumnName": "TBW/FFM",
+      "entityAttribute": "tbwFfm",
+      "dataType": "Double",
+      "required": false,
+      "description": "Ratio TBW/FFM"
+    },
+    {
+      "csvColumnIndex": 154,
+      "csvColumnName": "FFMI (Fat Free Mass Index)",
+      "entityAttribute": "ffmiFatFreeMassIndex",
+      "dataType": "Double",
+      "required": false,
+      "description": "Indice de masse sans graisse"
+    },
+    {
+      "csvColumnIndex": 155,
+      "csvColumnName": "FMI (Fat Mass Index)",
+      "entityAttribute": "fmiFatMassIndex",
+      "dataType": "Double",
+      "required": false,
+      "description": "Indice de masse grasse"
+    },
+    {
+      "csvColumnIndex": 156,
+      "csvColumnName": "1kHz-RA Impedance",
+      "entityAttribute": "v1khzRaImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 1kHz bras droit"
+    },
+    {
+      "csvColumnIndex": 157,
+      "csvColumnName": "1kHz-LA Impedance",
+      "entityAttribute": "v1khzLaImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 1kHz bras gauche"
+    },
+    {
+      "csvColumnIndex": 158,
+      "csvColumnName": "1kHz-TR Impedance",
+      "entityAttribute": "v1khzTrImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 1kHz tronc"
+    },
+    {
+      "csvColumnIndex": 159,
+      "csvColumnName": "1kHz-RL Impedance",
+      "entityAttribute": "v1khzRlImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 1kHz jambe droite"
+    },
+    {
+      "csvColumnIndex": 160,
+      "csvColumnName": "1kHz-LL Impedance",
+      "entityAttribute": "v1khzLlImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 1kHz jambe gauche"
+    },
+    {
+      "csvColumnIndex": 161,
+      "csvColumnName": "5kHz-RA Impedance",
+      "entityAttribute": "v5khzRaImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 5kHz bras droit"
+    },
+    {
+      "csvColumnIndex": 162,
+      "csvColumnName": "5kHz-LA Impedance",
+      "entityAttribute": "v5khzLaImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 5kHz bras gauche"
+    },
+    {
+      "csvColumnIndex": 163,
+      "csvColumnName": "5kHz-TR Impedance",
+      "entityAttribute": "v5khzTrImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 5kHz tronc"
+    },
+    {
+      "csvColumnIndex": 164,
+      "csvColumnName": "5kHz-RL Impedance",
+      "entityAttribute": "v5khzRlImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 5kHz jambe droite"
+    },
+    {
+      "csvColumnIndex": 165,
+      "csvColumnName": "5kHz-LL Impedance",
+      "entityAttribute": "v5khzLlImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 5kHz jambe gauche"
+    },
+    {
+      "csvColumnIndex": 166,
+      "csvColumnName": "50kHz-RA Impedance",
+      "entityAttribute": "v50khzRaImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 50kHz bras droit"
+    },
+    {
+      "csvColumnIndex": 167,
+      "csvColumnName": "50kHz-LA Impedance",
+      "entityAttribute": "v50khzLaImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 50kHz bras gauche"
+    },
+    {
+      "csvColumnIndex": 168,
+      "csvColumnName": "50kHz-TR Impedance",
+      "entityAttribute": "v50khzTrImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 50kHz tronc"
+    },
+    {
+      "csvColumnIndex": 169,
+      "csvColumnName": "50kHz-RL Impedance",
+      "entityAttribute": "v50khzRlImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 50kHz jambe droite"
+    },
+    {
+      "csvColumnIndex": 170,
+      "csvColumnName": "50kHz-LL Impedance",
+      "entityAttribute": "v50khzLlImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 50kHz jambe gauche"
+    },
+    {
+      "csvColumnIndex": 171,
+      "csvColumnName": "250kHz-RA Impedance",
+      "entityAttribute": "v250khzRaImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 250kHz bras droit"
+    },
+    {
+      "csvColumnIndex": 172,
+      "csvColumnName": "250kHz-LA Impedance",
+      "entityAttribute": "v250khzLaImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 250kHz bras gauche"
+    },
+    {
+      "csvColumnIndex": 173,
+      "csvColumnName": "250kHz-TR Impedance",
+      "entityAttribute": "v250khzTrImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 250kHz tronc"
+    },
+    {
+      "csvColumnIndex": 174,
+      "csvColumnName": "250kHz-RL Impedance",
+      "entityAttribute": "v250khzRlImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 250kHz jambe droite"
+    },
+    {
+      "csvColumnIndex": 175,
+      "csvColumnName": "250kHz-LL Impedance",
+      "entityAttribute": "v250khzLlImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 250kHz jambe gauche"
+    },
+    {
+      "csvColumnIndex": 176,
+      "csvColumnName": "500kHz-RA Impedance",
+      "entityAttribute": "v500khzRaImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 500kHz bras droit"
+    },
+    {
+      "csvColumnIndex": 177,
+      "csvColumnName": "500kHz-LA Impedance",
+      "entityAttribute": "v500khzLaImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 500kHz bras gauche"
+    },
+    {
+      "csvColumnIndex": 178,
+      "csvColumnName": "500kHz-TR Impedance",
+      "entityAttribute": "v500khzTrImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 500kHz tronc"
+    },
+    {
+      "csvColumnIndex": 179,
+      "csvColumnName": "500kHz-RL Impedance",
+      "entityAttribute": "v500khzRlImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 500kHz jambe droite"
+    },
+    {
+      "csvColumnIndex": 180,
+      "csvColumnName": "500kHz-LL Impedance",
+      "entityAttribute": "v500khzLlImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 500kHz jambe gauche"
+    },
+    {
+      "csvColumnIndex": 181,
+      "csvColumnName": "1000kHz-RA Impedance",
+      "entityAttribute": "v1000khzRaImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 1000kHz bras droit"
+    },
+    {
+      "csvColumnIndex": 182,
+      "csvColumnName": "1000kHz-LA Impedance",
+      "entityAttribute": "v1000khzLaImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 1000kHz bras gauche"
+    },
+    {
+      "csvColumnIndex": 183,
+      "csvColumnName": "1000kHz-TR Impedance",
+      "entityAttribute": "v1000khzTrImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 1000kHz tronc"
+    },
+    {
+      "csvColumnIndex": 184,
+      "csvColumnName": "1000kHz-RL Impedance",
+      "entityAttribute": "v1000khzRlImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 1000kHz jambe droite"
+    },
+    {
+      "csvColumnIndex": 185,
+      "csvColumnName": "1000kHz-LL Impedance",
+      "entityAttribute": "v1000khzLlImpedance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Impédance 1000kHz jambe gauche"
+    },
+    {
+      "csvColumnIndex": 186,
+      "csvColumnName": "5kHz-RA Reactance",
+      "entityAttribute": "v5khzRaReactance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Réactance 5kHz bras droit"
+    },
+    {
+      "csvColumnIndex": 187,
+      "csvColumnName": "5kHz-LA Reactance",
+      "entityAttribute": "v5khzLaReactance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Réactance 5kHz bras gauche"
+    },
+    {
+      "csvColumnIndex": 188,
+      "csvColumnName": "5kHz-TR Reactance",
+      "entityAttribute": "v5khzTrReactance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Réactance 5kHz tronc"
+    },
+    {
+      "csvColumnIndex": 189,
+      "csvColumnName": "5kHz-RL Reactance",
+      "entityAttribute": "v5khzRlReactance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Réactance 5kHz jambe droite"
+    },
+    {
+      "csvColumnIndex": 190,
+      "csvColumnName": "5kHz-LL Reactance",
+      "entityAttribute": "v5khzLlReactance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Réactance 5kHz jambe gauche"
+    },
+    {
+      "csvColumnIndex": 191,
+      "csvColumnName": "50kHz-RA Reactance",
+      "entityAttribute": "v50khzRaReactance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Réactance 50kHz bras droit"
+    },
+    {
+      "csvColumnIndex": 192,
+      "csvColumnName": "50kHz-LA Reactance",
+      "entityAttribute": "v50khzLaReactance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Réactance 50kHz bras gauche"
+    },
+    {
+      "csvColumnIndex": 193,
+      "csvColumnName": "50kHz-TR Reactance",
+      "entityAttribute": "v50khzTrReactance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Réactance 50kHz tronc"
+    },
+    {
+      "csvColumnIndex": 194,
+      "csvColumnName": "50kHz-RL Reactance",
+      "entityAttribute": "v50khzRlReactance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Réactance 50kHz jambe droite"
+    },
+    {
+      "csvColumnIndex": 195,
+      "csvColumnName": "50kHz-LL Reactance",
+      "entityAttribute": "v50khzLlReactance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Réactance 50kHz jambe gauche"
+    },
+    {
+      "csvColumnIndex": 196,
+      "csvColumnName": "250kHz-RA Reactance",
+      "entityAttribute": "v250khzRaReactance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Réactance 250kHz bras droit"
+    },
+    {
+      "csvColumnIndex": 197,
+      "csvColumnName": "250kHz-LA Reactance",
+      "entityAttribute": "v250khzLaReactance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Réactance 250kHz bras gauche"
+    },
+    {
+      "csvColumnIndex": 198,
+      "csvColumnName": "250kHz-TR Reactance",
+      "entityAttribute": "v250khzTrReactance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Réactance 250kHz tronc"
+    },
+    {
+      "csvColumnIndex": 199,
+      "csvColumnName": "250kHz-RL Reactance",
+      "entityAttribute": "v250khzRlReactance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Réactance 250kHz jambe droite"
+    },
+    {
+      "csvColumnIndex": 200,
+      "csvColumnName": "250kHz-LL Reactance",
+      "entityAttribute": "v250khzLlReactance",
+      "dataType": "Double",
+      "required": false,
+      "description": "Réactance 250kHz jambe gauche"
+    },
+    {
+      "csvColumnIndex": 201,
+      "csvColumnName": "50kHz-RA Phase Angle",
+      "entityAttribute": "v50khzRaPhaseAngle",
+      "dataType": "Double",
+      "required": false,
+      "description": "Angle de phase 50kHz bras droit"
+    },
+    {
+      "csvColumnIndex": 202,
+      "csvColumnName": "50kHz-LA Phase Angle",
+      "entityAttribute": "v50khzLaPhaseAngle",
+      "dataType": "Double",
+      "required": false,
+      "description": "Angle de phase 50kHz bras gauche"
+    },
+    {
+      "csvColumnIndex": 203,
+      "csvColumnName": "50kHz-TR Phase Angle",
+      "entityAttribute": "v50khzTrPhaseAngle",
+      "dataType": "Double",
+      "required": false,
+      "description": "Angle de phase 50kHz tronc"
+    },
+    {
+      "csvColumnIndex": 204,
+      "csvColumnName": "50kHz-RL Phase Angle",
+      "entityAttribute": "v50khzRlPhaseAngle",
+      "dataType": "Double",
+      "required": false,
+      "description": "Angle de phase 50kHz jambe droite"
+    },
+    {
+      "csvColumnIndex": 205,
+      "csvColumnName": "50kHz-LL Phase Angle",
+      "entityAttribute": "v50khzLlPhaseAngle",
+      "dataType": "Double",
+      "required": false,
+      "description": "Angle de phase 50kHz jambe gauche"
+    },
+    {
+      "csvColumnIndex": 206,
+      "csvColumnName": "50kHz-Whole Body Phase Angle",
+      "entityAttribute": "v50khzWholeBodyPhaseAngle",
+      "dataType": "Double",
+      "required": false,
+      "description": "Angle de phase 50kHz corps entier"
+    },
+    {
+      "csvColumnIndex": 207,
+      "csvColumnName": "Measured Circumference of Neck",
+      "entityAttribute": "measuredCircumferenceOfNeck",
+      "dataType": "Double",
+      "required": false,
+      "description": "Circonférence du cou mesurée"
+    },
+    {
+      "csvColumnIndex": 208,
+      "csvColumnName": "Measured Circumference of Chest",
+      "entityAttribute": "measuredCircumferenceOfChest",
+      "dataType": "Double",
+      "required": false,
+      "description": "Circonférence de la poitrine mesurée"
+    },
+    {
+      "csvColumnIndex": 209,
+      "csvColumnName": "Measured Circumference of Abdomen",
+      "entityAttribute": "measuredCircumferenceOfAbdomen",
+      "dataType": "Double",
+      "required": false,
+      "description": "Circonférence de l'abdomen mesurée"
+    },
+    {
+      "csvColumnIndex": 210,
+      "csvColumnName": "Measured Circumference of Hip",
+      "entityAttribute": "measuredCircumferenceOfHip",
+      "dataType": "Double",
+      "required": false,
+      "description": "Circonférence de la hanche mesurée"
+    },
+    {
+      "csvColumnIndex": 211,
+      "csvColumnName": "Measured Circumference of Right Arm",
+      "entityAttribute": "measuredCircumferenceOfRightArm",
+      "dataType": "Double",
+      "required": false,
+      "description": "Circonférence du bras droit mesurée"
+    },
+    {
+      "csvColumnIndex": 212,
+      "csvColumnName": "Measured Circumference of Left Arm",
+      "entityAttribute": "measuredCircumferenceOfLeftArm",
+      "dataType": "Double",
+      "required": false,
+      "description": "Circonférence du bras gauche mesurée"
+    },
+    {
+      "csvColumnIndex": 213,
+      "csvColumnName": "Measured Circumference of Right Thigh",
+      "entityAttribute": "measuredCircumferenceOfRightThigh",
+      "dataType": "Double",
+      "required": false,
+      "description": "Circonférence de la cuisse droite mesurée"
+    },
+    {
+      "csvColumnIndex": 214,
+      "csvColumnName": "Measured Circumference of Left Thigh",
+      "entityAttribute": "measuredCircumferenceOfLeftThigh",
+      "dataType": "Double",
+      "required": false,
+      "description": "Circonférence de la cuisse gauche mesurée"
+    },
+    {
+      "csvColumnIndex": 215,
+      "csvColumnName": "Growth Score",
+      "entityAttribute": "growthScore",
+      "dataType": "Integer",
+      "required": false,
+      "description": "Score de croissance"
+    },
+    {
+      "csvColumnIndex": 216,
+      "csvColumnName": "Obesity Degree of a Child",
+      "entityAttribute": "obesityDegreeOfAChild",
+      "dataType": "Double",
+      "required": false,
+      "description": "Degré d'obésité d'un enfant"
+    },
+    {
+      "csvColumnIndex": 217,
+      "csvColumnName": "Lower Limit (Obesity Degree of a Child Normal Range)",
+      "entityAttribute": "lowerLimitObesityDegreeOfAChildNormalRange",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure degré d'obésité enfant"
+    },
+    {
+      "csvColumnIndex": 218,
+      "csvColumnName": "Upper Limit (Obesity Degree of a Child Normal Range)",
+      "entityAttribute": "upperLimitObesityDegreeOfAChildNormalRange",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure degré d'obésité enfant"
+    },
+    {
+      "csvColumnIndex": 219,
+      "csvColumnName": "Systolic",
+      "entityAttribute": "systolic",
+      "dataType": "Double",
+      "required": false,
+      "description": "Pression systolique"
+    },
+    {
+      "csvColumnIndex": 220,
+      "csvColumnName": "Diastolic",
+      "entityAttribute": "diastolic",
+      "dataType": "Double",
+      "required": false,
+      "description": "Pression diastolique"
+    },
+    {
+      "csvColumnIndex": 221,
+      "csvColumnName": "Pulse",
+      "entityAttribute": "pulse",
+      "dataType": "Double",
+      "required": false,
+      "description": "Pouls"
+    },
+    {
+      "csvColumnIndex": 222,
+      "csvColumnName": "Mean Artery Pressure",
+      "entityAttribute": "meanArteryPressure",
+      "dataType": "Double",
+      "required": false,
+      "description": "Pression artérielle moyenne"
+    },
+    {
+      "csvColumnIndex": 223,
+      "csvColumnName": "Pulse Pressure",
+      "entityAttribute": "pulsePressure",
+      "dataType": "Double",
+      "required": false,
+      "description": "Pression pulsée"
+    },
+    {
+      "csvColumnIndex": 224,
+      "csvColumnName": "Rate Pressure Product",
+      "entityAttribute": "ratePressureProduct",
+      "dataType": "Double",
+      "required": false,
+      "description": "Produit fréquence-pression"
+    },
+    {
+      "csvColumnIndex": 225,
+      "csvColumnName": "InBody Type",
+      "entityAttribute": "inbodyType",
+      "dataType": "String",
+      "required": false,
+      "description": "Type d'appareil InBody"
+    },
+    {
+      "csvColumnIndex": 226,
+      "csvColumnName": "Local ID",
+      "entityAttribute": "localId",
+      "dataType": "String",
+      "required": false,
+      "description": "ID local"
+    },
+    {
+      "csvColumnIndex": 227,
+      "csvColumnName": "SMI (Skeletal Muscle Index)",
+      "entityAttribute": "smiSkeletalMuscleIndex",
+      "dataType": "Double",
+      "required": false,
+      "description": "Indice de muscle squelettique"
+    },
+    {
+      "csvColumnIndex": 228,
+      "csvColumnName": "Medical History",
+      "entityAttribute": "medicalHistory",
+      "dataType": "String",
+      "required": false,
+      "description": "Historique médical"
+    },
+    {
+      "csvColumnIndex": 229,
+      "csvColumnName": "Group",
+      "entityAttribute": "group",
+      "dataType": "String",
+      "required": false,
+      "description": "Groupe"
+    },
+    {
+      "csvColumnIndex": 230,
+      "csvColumnName": "Recommended Calorie Intake",
+      "entityAttribute": "recommendedCalorieIntake",
+      "dataType": "Integer",
+      "required": false,
+      "description": "Apport calorique recommandé"
+    },
+    {
+      "csvColumnIndex": 231,
+      "csvColumnName": "Lower Limit (BMR Normal Range)",
+      "entityAttribute": "lowerLimitBmrNormalRange",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite inférieure BMR"
+    },
+    {
+      "csvColumnIndex": 232,
+      "csvColumnName": "Upper Limit (BMR Normal Range)",
+      "entityAttribute": "upperLimitBmrNormalRange",
+      "dataType": "Double",
+      "required": false,
+      "description": "Limite supérieure BMR"
+    },
+    {
+      "csvColumnIndex": 233,
+      "csvColumnName": "SMM/WT",
+      "entityAttribute": "smmWt",
+      "dataType": "Double",
+      "required": false,
+      "description": "Ratio SMM/poids"
+    }
+  ]
+}

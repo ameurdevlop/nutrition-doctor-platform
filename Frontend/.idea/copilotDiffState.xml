@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/src/styles/styles.scss">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/src/styles/styles.scss" />
+              <option name="originalContent" value="/* ----------------------------------------------------------------------------------------------------- */&#10;/*  @ Import/write your custom styles here.&#10;/*  @ Styles from this file will override 'vendors.scss' and Fuse's base styles.&#10;/* ----------------------------------------------------------------------------------------------------- */&#10;.rtd-panel .mat-mdc-dialog-container {&#10;    padding       : 0 !important;&#10;    border-radius : 20px !important;&#10;    overflow      : hidden !important;&#10;    box-shadow    : 0 24px 64px rgba(15,23,42,.2),&#10;    0 4px 16px rgba(15,23,42,.08) !important;&#10;}&#10;&#10;.rtd-panel .mat-mdc-dialog-surface {&#10;    padding       : 0 !important;&#10;    border-radius : 20px !important;&#10;    overflow      : hidden !important;&#10;}&#10;&#10;" />
+              <option name="updatedContent" value="/* ----------------------------------------------------------------------------------------------------- */&#10;/*  @ Import/write your custom styles here.&#10;/*  @ Styles from this file will override 'vendors.scss' and Fuse's base styles.&#10;/* ----------------------------------------------------------------------------------------------------- */&#10;.rtd-panel .mat-mdc-dialog-container {&#10;    padding       : 0 !important;&#10;    border-radius : 20px !important;&#10;    overflow      : hidden !important;&#10;    box-shadow    : 0 24px 64px rgba(15,23,42,.2),&#10;    0 4px 16px rgba(15,23,42,.08) !important;&#10;}&#10;&#10;.rtd-panel .mat-mdc-dialog-surface {&#10;    padding       : 0 !important;&#10;    border-radius : 20px !important;&#10;    overflow      : hidden !important;&#10;}&#10;&#10;body.chat-scroll-locked {&#10;    overflow: hidden;&#10;}&#10;&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
