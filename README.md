@@ -1,144 +1,130 @@
 # 🥗 Nutrition Doctor
 
-> **Plateforme intelligente de gestion de cabinet nutritionnel avec analyse prédictive par Intelligence Artificielle**
+<p align="center">
 
-[![Angular](https://img.shields.io/badge/Frontend-Angular-red?logo=angular)](https://angular.dev/)
-[![Spring Boot](https://img.shields.io/badge/Backend-Spring%20Boot-6DB33F?logo=springboot)](https://spring.io/projects/spring-boot)
-[![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-4169E1?logo=postgresql)](https://www.postgresql.org/)
-[![Python](https://img.shields.io/badge/AI-Python-3776AB?logo=python)](https://www.python.org/)
-[![XGBoost](https://img.shields.io/badge/ML-XGBoost-orange)](https://xgboost.readthedocs.io/)
-[![Docker](https://img.shields.io/badge/DevOps-Docker-2496ED?logo=docker)](https://www.docker.com/)
-[![Azure](https://img.shields.io/badge/Cloud-Microsoft%20Azure-0078D4?logo=microsoftazure)](https://azure.microsoft.com/)
-[![License](https://img.shields.io/badge/License-PFE-blue)]()
+## AI-Powered Nutrition Clinic Management Platform
 
----
+**Plateforme intelligente de gestion de cabinet nutritionnel avec analyse prédictive par Intelligence Artificielle**
 
-## 📑 Table des matières
+</p>
 
-- [Présentation](#-présentation)
-- [Contexte et problématique](#-contexte-et-problématique)
-- [Objectifs](#-objectifs)
-- [Solution proposée](#-solution-proposée)
-- [Fonctionnalités](#-fonctionnalités)
-- [Acteurs du système](#-acteurs-du-système)
-- [Architecture globale](#-architecture-globale)
-- [Clean Architecture](#-clean-architecture)
-- [Flux InBody](#-flux-inbody)
-- [Intelligence Artificielle](#-intelligence-artificielle)
-- [Flux du module Machine Learning](#-flux-du-module-machine-learning)
-- [Sécurité](#-sécurité)
-- [Méthodologie Scrum](#-méthodologie-scrum)
-- [DevOps et CI/CD](#-devops-et-cicd)
-- [Technologies](#-technologies)
-- [Structure du projet](#-structure-du-projet)
-- [Installation](#-installation)
-- [Configuration](#-configuration)
-- [Docker](#-docker)
-- [API](#-api)
-- [Interfaces](#-interfaces)
-- [Équipe](#-équipe)
-- [Perspectives](#-perspectives)
-- [Conclusion](#-conclusion)
+<p align="center">
+
+![Angular](https://img.shields.io/badge/Frontend-Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Backend-Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Python](https://img.shields.io/badge/AI-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![XGBoost](https://img.shields.io/badge/ML-XGBoost-orange?style=for-the-badge)
+![Docker](https://img.shields.io/badge/DevOps-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Azure](https://img.shields.io/badge/Cloud-Microsoft%20Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
+
+</p>
 
 ---
 
-# 🥗 Présentation
+# 📑 Table of Contents
+
+- [📌 Présentation](#-présentation)
+- [🎯 Contexte et problématique](#-contexte-et-problématique)
+- [💡 Solution proposée](#-solution-proposée)
+- [🎯 Objectifs](#-objectifs)
+- [👥 Acteurs](#-acteurs)
+- [⚙️ Fonctionnalités](#️-fonctionnalités)
+- [🏗️ Architecture globale](#️-architecture-globale)
+- [🧱 Clean Architecture](#-clean-architecture)
+- [🧬 Gestion des données InBody](#-gestion-des-données-inbody)
+- [🤖 Intelligence Artificielle](#-intelligence-artificielle)
+- [📊 Machine Learning](#-machine-learning)
+- [🔎 Explainability avec SHAP](#-explainability-avec-shap)
+- [📈 Goal Tracking](#-goal-tracking)
+- [🔐 Sécurité](#-sécurité)
+- [📅 Méthodologie Scrum](#-méthodologie-scrum)
+- [🔄 Flux fonctionnels](#-flux-fonctionnels)
+- [☁️ DevOps et Cloud](#️-devops-et-cloud)
+- [🐳 Docker](#-docker)
+- [🧰 Technologies](#-technologies)
+- [📁 Structure du projet](#-structure-du-projet)
+- [🔌 API](#-api)
+- [🖥️ Installation](#️-installation)
+- [🔐 Configuration](#-configuration)
+- [📸 Interfaces](#-interfaces)
+- [🧪 Tests et qualité](#-tests-et-qualité)
+- [🔮 Perspectives](#-perspectives)
+- [👨‍💻 Équipe](#-équipe)
+- [🎓 Projet de Fin d'Études](#-projet-de-fin-détudes)
+- [🏁 Conclusion](#-conclusion)
+
+---
+
+# 📌 Présentation
 
 **Nutrition Doctor** est une plateforme web intelligente destinée à la gestion complète d'un cabinet de nutrition.
 
-Le projet vise à centraliser les différentes activités d'un cabinet :
+Le projet combine une application web moderne, une architecture backend robuste, une base de données relationnelle et un module d'Intelligence Artificielle permettant d'analyser et de prédire l'évolution de certaines métriques liées à la composition corporelle des patients.
 
-- gestion des patients ;
-- gestion des rendez-vous ;
-- suivi de la composition corporelle ;
-- import des données InBody ;
-- consultations en ligne ;
-- messagerie ;
-- notifications ;
-- gestion des documents ;
-- gestion des abonnements ;
-- tableaux de bord analytiques ;
-- génération de rapports ;
-- assistance intelligente ;
-- prédiction de l'évolution de la composition corporelle.
+La plateforme vise à centraliser les différentes activités d'un cabinet nutritionnel dans un environnement unique :
 
-L'objectif principal est de transformer les données nutritionnelles et corporelles brutes en informations exploitables par le nutritionniste.
+- 👥 Gestion des patients
+- 📅 Gestion des rendez-vous
+- 🧬 Suivi de la composition corporelle
+- 📊 Import et analyse des données InBody
+- 💬 Messagerie
+- 📹 Consultations en ligne
+- 🔔 Notifications
+- 📄 Gestion des documents
+- 💳 Gestion des abonnements
+- 📈 Tableaux de bord
+- 🤖 Analyse prédictive
+- 🔎 Explicabilité des prédictions
+- ☁️ Déploiement Cloud
+- 🐳 Conteneurisation Docker
+- 🔄 CI/CD
 
 ---
 
 # 🎯 Contexte et problématique
 
-Dans les cabinets de nutrition, les données sont souvent dispersées entre :
+Dans un cabinet de nutrition, plusieurs types de données sont générés quotidiennement :
 
-- dossiers patients ;
-- fichiers Excel/CSV ;
-- appareils de mesure corporelle ;
-- agendas ;
-- outils de communication ;
-- systèmes de paiement ;
-- documents administratifs.
+- informations personnelles des patients ;
+- mesures corporelles ;
+- historiques InBody ;
+- rendez-vous ;
+- objectifs ;
+- consultations ;
+- documents ;
+- communications ;
+- informations administratives.
 
-Cette fragmentation rend le suivi plus complexe et augmente le temps consacré aux tâches administratives.
+Lorsque ces informations sont réparties entre plusieurs outils, le suivi devient plus complexe et les professionnels doivent consacrer davantage de temps aux tâches administratives.
 
-Une problématique centrale du projet est donc :
+Le projet Nutrition Doctor répond donc à la problématique suivante :
 
-> **Comment concevoir une plateforme capable de centraliser le fonctionnement d'un cabinet nutritionnel tout en transformant les données corporelles des patients en informations utiles à la prise de décision grâce à l'Intelligence Artificielle ?**
+> **Comment concevoir une plateforme intelligente permettant de centraliser la gestion d'un cabinet de nutrition tout en exploitant les données corporelles des patients afin de faciliter le suivi et la prise de décision grâce à l'Intelligence Artificielle ?**
 
-Nutrition Doctor répond à cette problématique en combinant :
+---
+
+# 💡 Solution proposée
+
+Nutrition Doctor propose une architecture centralisée combinant :
 
 ```text
-Gestion métier
-      +
-Données InBody
-      +
-Analyse statistique
-      +
-Machine Learning
-      +
-Tableaux de bord
-      +
-Infrastructure Cloud
-🚀 Objectifs
-Objectif général
-
-Développer une plateforme numérique complète permettant aux cabinets de nutrition de gérer leurs activités tout en bénéficiant d'une assistance prédictive basée sur l'IA.
-
-Objectifs spécifiques
-👨‍⚕️ Gestion médicale
-gérer les patients ;
-consulter leurs dossiers ;
-suivre leurs rendez-vous ;
-suivre leur composition corporelle ;
-analyser leur évolution.
-📊 Analyse des données
-importer les données InBody ;
-historiser les mesures ;
-visualiser les tendances ;
-comparer les différentes mesures.
-🤖 Intelligence Artificielle
-prédire l'évolution de certaines métriques corporelles ;
-fournir des intervalles d'incertitude ;
-expliquer certaines prédictions ;
-suivre les objectifs du patient.
-💻 Digitalisation
-centraliser les opérations du cabinet ;
-permettre les consultations en ligne ;
-proposer une messagerie ;
-automatiser les notifications.
-☁️ DevOps
-conteneuriser l'application ;
-automatiser les builds ;
-automatiser le déploiement ;
-utiliser les services Cloud Azure.
-💡 Solution proposée
-
-L'application est organisée autour de plusieurs modules :
-👥 Acteurs du système
-
-La plateforme distingue principalement quatre rôles :
-
-Acteur	Responsabilités
-👨‍⚕️ Nutritionniste	Patients, consultations, suivi, analyses, prédictions
-👩‍💼 Secrétaire	Rendez-vous, patients, organisation du cabinet
-🧑 Patient	Rendez-vous, mesures, objectifs, consultations
-👨‍💻 Administrateur	Utilisateurs, sécurité, abonnements, administration
+                 🥗 NUTRITION DOCTOR
+                         │
+        ┌────────────────┼────────────────┐
+        │                │                │
+     Gestion           Analyse            IA
+        │                │                │
+     Patients          InBody          XGBoost
+     Rendez-vous       Historique       SHAP
+     Consultations    Dashboard       Prediction
+        │                │                │
+        └────────────────┼────────────────┘
+                         │
+                  Architecture
+                         │
+              Clean Architecture
+                         │
+                   DevOps / Cloud
+                         │
+                       Azure
